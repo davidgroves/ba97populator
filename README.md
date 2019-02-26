@@ -10,7 +10,7 @@ You need Python 3.7, to install the packages in requirements.txt (ideally in a P
 and to have Firefox and the [Gecko Selenium driver](https://github.com/mozilla/geckodriver/releases)
 installed.
 
-You need to edit the credentials.json file and fill in your information.
+Rename example-credentials.json to credentials.json and fill it in. 
 
 Then you just run the program and it should write your flights to STDOUT.
 
