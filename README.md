@@ -23,6 +23,15 @@ This should be easy to fix.
 - It can be a bit slow. BA have plenty of wierd places where you need to just wait, 
 regardless of if the browser thinks it is ready or not, so there are lots of long sleeps.
 
+# Example Output
+
+    01Mar2019 1935 BA2966 LGW GLA Y A319 10A
+    03Mar2019 2110 BA2965 GLA LGW Y A319 10A
+    04Mar2019 0825 BA0117 LHR JFK F B747 01A
+    04Mar2019 1630 BA2466 JFK SFO F A321 01A
+    10Mar2019 1115 BA4388 SFO JFK J A321 09A
+    11Mar2019 0015 BA0182 JFK LHR J A321 10K
+
 # Contact
 
 - Feedback, bug reports, ranting to ba97populator (at sign) fibrecat.org.
