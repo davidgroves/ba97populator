@@ -18,7 +18,7 @@ Then you just run the program and it should write your flights to STDOUT.
 
 - I've only tested this on my own machine (a Windows 10 PC in this case).
 - It may not cope with some more complex itineraries, please report this if you care.
-- It might not cope with plane types I've not seen or selling class names I've not thought of. 
+- It might not cope with plane types I've not seen or cabin class names I've not thought of. 
 This should be easy to fix.
 - It can be a bit slow. BA have plenty of wierd places where you need to just wait, 
 regardless of if the browser thinks it is ready or not, so there are lots of long sleeps.
