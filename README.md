@@ -30,7 +30,7 @@ regardless of if the browser thinks it is ready or not, so there are lots of lon
     04Mar2019 0825 BA0117 LHR JFK F B747 01A
     04Mar2019 1630 BA2466 JFK SFO F A321 01A
     10Mar2019 1115 BA4388 SFO JFK J A321 09A
-    11Mar2019 0015 BA0182 JFK LHR J A321 10K
+    11Mar2019 0015 BA0182 JFK LHR J B777 10K
 
 # Contact
 
