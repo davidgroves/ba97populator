@@ -1,5 +1,6 @@
 import json
 import time
+import logging
 from dataclasses import dataclass
 
 import arrow
@@ -60,6 +61,13 @@ if __name__ == '__main__':
         credentials = json.load(f)
         my_username = credentials['username']
         my_password = credentials['password']
+        debug_level = credentials['debug_level']
+
+    # Setup logging
+    if debug_level == "debug":
+        logging.basicConfig(level=logging.DEBUG)
+    else:
+        logging.basicConfig(level=logging.CRITICAL)
 
     # Load up firefox
     driver = webdriver.Firefox()
@@ -155,6 +163,7 @@ if __name__ == '__main__':
             x = 0
             for line in soup.text.splitlines():
                 if "trackflightArray.aircraft" in line:
+                    logging.debug(f"Line for aircraft is {line}")
                     segments[x].plane_type = plane_types[line.split("'")[1]]
                     x += 1
 
