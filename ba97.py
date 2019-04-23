@@ -156,23 +156,23 @@ if __name__ == '__main__':
 
             x = 0
             for line in soup.text.splitlines():
+                segments[x].seat = '""'
                 if "if(Array.isArray(dataLayer.flights)){dataLayer.flights[seatSegment].seat= " in line:
                     try:
                         segments[x].seat = line.split("'")[1].split(",")[0]
                     except:
-                        logging.info('Cannot determine seat, setting to ""')
-                        segments[x].seat = "-"
+                        logging.info('Cannot determine seat, leaving as ""')
                     x += 1
 
             x = 0
             for line in soup.text.splitlines():
+                segments[x].plane_type = '""'
                 if "trackflightArray.aircraft" in line:
                     logging.debug(f"Line for aircraft is {line}")
                     try:
                         segments[x].plane_type = plane_types[line.split("'")[1]]
                     except:
-                        logging.info('Cannot determine plane type, setting to ""')
-                        segments[x].plane_type = "-"
+                        logging.info('Cannot determine plane type, leaving as ""')
                     x += 1
 
             x = 0
