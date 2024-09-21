@@ -1,3 +1,8 @@
+# NO LONGER WORKS.
+
+This no longer works as BA have made changes to the website and this screenscraping doesn't work anymore.
+
+
 # Purpose
 
 A program to take British Airways flight bookings from the 
